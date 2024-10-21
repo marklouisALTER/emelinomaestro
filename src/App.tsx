@@ -8,8 +8,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route index element={<Homepage />} />
+          <Route path="/" element={<Layout />} >
+            <Route index element={<Homepage />} />
+          </Route>
         </Routes>
       </Router>
     </>

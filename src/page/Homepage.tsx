@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Partners } from '../components/Partners/Partners';
+import { Statistics } from '../components/Statistics/Statistics';
+import { Hero } from '../components/Hero/Hero,';
 
-const Homepage:React.FC = () => {
+const Homepage: React.FC = () => {
   return (
-    <div>Homepage</div>
-  )
-}
+    <div>
+      <Hero/>
+      <Statistics/>      
+      <Partners/>
+    </div>
+  );
+};
 
-export default Homepage
+export default Homepage;
