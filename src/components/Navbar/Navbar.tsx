@@ -18,7 +18,7 @@ const Menu: React.FC = () => {
         <a href="">Pricing</a>
         <a href="">FAQs</a>
         <a href="">Contact Us</a>
-        <a href="" className='bg-white hover:bg-whiteDark text-primary py-[5px] px-[15px] rounded-md'>Consult</a>
+        <a href="" className='bg-white hover:bg-whiteDark transition-all ease-in-out text-primary py-[5px] px-[15px] rounded-md'>Consult</a>
       </div>
     </div>
   );
