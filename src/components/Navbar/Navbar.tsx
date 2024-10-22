@@ -10,10 +10,10 @@ const Menu: React.FC = () => {
       </button>          
       <div 
         className={`bg-primaryDark md:bg-primary rounded-md  p-4 shadow-xl md:shadow-none absolute md:static top-full right-0 
-        flex-col md:flex-row items-center gap-4 lg:gap-8 font-monts text-white text-sm lg:text-xl font-medium 
+        flex-col md:flex-row items-center gap-4 lg:gap-8 font-monts text-white text-sm lg:text-sm font-medium 
         ${open ? 'flex' : 'hidden md:flex'}`}
       >
-        <a href="">Home</a>
+        <a href="#home">Home</a>
         <a href="">Seminars</a>
         <a href="">Pricing</a>
         <a href="">FAQs</a>
@@ -29,7 +29,15 @@ export default Menu;
 
 export const Navbar:React.FC = () => {
   return (
-    <div className='bg-primary'>      
+    <>
+      <div className="flex flex-col sm:flex-row items-center justify-between bg-white py-[10px] px-[20px] md:px-[120px]">
+        <h6 className="font-monts text-sm  md:text-md font-medium mb-2 md:mb-0">Join our latest seminars and events</h6>
+        <div className="flex items-center gap-6 text-sm font-medium font-karla">
+            <a href="" className="">View Details</a>
+            <a href="" className="bg-primary hover:bg-primaryDark px-4 py-[4px] rounded-md text-white">Book Now</a>
+        </div>
+    </div>
+    <div className='bg-primary sticky top-0 z-[99] w-full'>      
       <div className='flex items-center py-[8px] px-[20px] justify-between'>
         
         <div className='flex items-center gap-4 text-2xl '>
@@ -41,5 +49,7 @@ export const Navbar:React.FC = () => {
       </div>
 
     </div>
+
+    </>
   )
 }

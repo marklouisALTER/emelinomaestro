@@ -25,14 +25,17 @@ const statistics:StatisticsProps[] = [
 
 export const Statistics: React.FC = () => {
     return (
-      <div className='flex items-center justify-center gap-6 text-white font-karla font-bold bg-primary w-[1078px] h-[202px] 
-      rounded-md absolute left-1/2 transform -translate-x-1/2 top-[calc(100vh-350px)]'>
-        {statistics.map((stats, index) => (
-            <div key={index} className='flex items-center justify-center gap-2 '>
-                <span className='text-[67px]'> {stats.stats} </span>
-                <span className='text-[17px] font-normal w-[97px]'>{stats.name}</span>
+      <div className='relative w-full flex items-center justify-center gap-6 text-white font-karla font-bold 
+        rounded-md'>
+            <div className="absolute bg-primary hidden md:flex md:gap-3 lg:gap-5 p-5 rounded-md shadow-lg shadow-gray-400">
+                {statistics.map((stats, index) => (
+
+                    <div key={index} className='w-full flex items-center justify-evenly md:px-1 lg:px-5 gap-2'>
+                        <span className='text-[30px] lg:text-[44px] xl:text-[60px]'> {stats.stats} </span>
+                        <span className='lg:text-[13px] xl:text-[17px] font-normal w-[97px]'>{stats.name}</span>
+                    </div>
+                ))}          
             </div>
-        ))}          
       </div>
     );
   };

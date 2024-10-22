@@ -25,11 +25,12 @@ export const Partners: React.FC = () => {
 
     return (
         <div className="flex items-center justify-center flex-col mt-36 overflow-hidden">
-            <h1 className="text-lg md:text-3xl font-inter font-bold mb-12">OUR COMPANY PARTNER</h1>
-            <div className="flex gap-8 overflow-x-auto p-4">
+            <h1 className="text-lg md:text-3xl font-inter font-bold">OUR COMPANY PARTNER</h1>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-4">
                 {partners.map((partner, index) => (
-                    <img key={index} src={partner.image} 
-                    alt="" width={'201px'}/>
+                    <div key={index} className="w-[200px] bg-white rounded-md flex items-center justify-center">
+                        <img src={partner.image} alt="Partner" className="w-[150px] h-[100px] object-contain"/>
+                    </div>
                 ))}                                                
             </div>
         </div>
