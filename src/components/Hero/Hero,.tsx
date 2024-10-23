@@ -1,3 +1,4 @@
+
 import { Statistics } from "../Statistics/Statistics"
 
 
@@ -5,11 +6,13 @@ import { Statistics } from "../Statistics/Statistics"
 export const Hero:React.FC = () => {
     return (
         <section id="home" className="w-full h-[601px] relative">
+           <div className="h-[37rem]">
             <img
-            src="https://s3-alpha-sig.figma.com/img/d998/48f8/7e1ee4d367a278696cf0638c000fb6c4?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p57GTea6lFcn1RruXPjYuWZ36KWCGBiff52xIT0qZOdSa5wYQzUTYHSOmylUme6IKpfs5MlIdPP1wHq-z-NZi5jVw2tpJ0ygioWmWno7IB896wVM9A9Y-kBKRxrGEjDJ7dGktiohG04S7Vt-CGo1Q2C-UoIHV8kx1YXsU5HFNPxsJwccf1GJSxnKMmM0IBW9~coKOs8wqaiNST3SWEwlSSQqQp~QilUIAMDKE04kwrOEpE3gQ~WgdPUR3wMVwUshx3xbCuj4pRy8D2d9Vdy0IXj1oXcaGB~yGB-DM0pyh7qpJOQ-bd2qR224Q7kdBEGsRXHgYowhs3utQyWjizYG4A__"
-            alt="Description"
-            className="w-full h-full object-cover"
-            />
+                    src="https://s3-alpha-sig.figma.com/img/d998/48f8/7e1ee4d367a278696cf0638c000fb6c4?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p57GTea6lFcn1RruXPjYuWZ36KWCGBiff52xIT0qZOdSa5wYQzUTYHSOmylUme6IKpfs5MlIdPP1wHq-z-NZi5jVw2tpJ0ygioWmWno7IB896wVM9A9Y-kBKRxrGEjDJ7dGktiohG04S7Vt-CGo1Q2C-UoIHV8kx1YXsU5HFNPxsJwccf1GJSxnKMmM0IBW9~coKOs8wqaiNST3SWEwlSSQqQp~QilUIAMDKE04kwrOEpE3gQ~WgdPUR3wMVwUshx3xbCuj4pRy8D2d9Vdy0IXj1oXcaGB~yGB-DM0pyh7qpJOQ-bd2qR224Q7kdBEGsRXHgYowhs3utQyWjizYG4A__"
+                    alt="Description"
+                    className="w-full h-full object-cover"
+                />
+            </div>
             <div className="absolute inset-0 backdrop-blur-lg bg-[#292222] opacity-80"></div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center font-inter font-bold">
             <h1 className="text-white text-5xl md:text-5xl lg:text-8xl mb-2">Lorem Ipsum</h1>
