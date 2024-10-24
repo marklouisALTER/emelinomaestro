@@ -1,19 +1,20 @@
 
 import { Statistics } from "../Statistics/Statistics"
 import group_picture_one from '../../assets/images/group-pic-1.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 
 export const Hero:React.FC = () => {
     return (
         <section id="home" className="w-full h-[601px] relative">
            <div className="h-[37rem] relative">
-            <img
+            <LazyLoadImage
                     src={group_picture_one}
                     alt="Description"
                     className="w-full z-[99] h-full object-cover"
                 />
             </div>
-            <div className="absolute inset-0 backdrop-blur-lg bg-[#292222] opacity-70"></div>
+            <div className="absolute inset-0 backdrop-blur-lg bg-[#000000] opacity-70"></div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center font-inter font-bold">
             <h1 className="text-white text-5xl md:text-5xl lg:text-8xl mb-2">Resibo Pilipinas</h1>
             {/* <h4 className="text-white text-lg md:text-4xl">Lorem Ipsum</h4> */}
